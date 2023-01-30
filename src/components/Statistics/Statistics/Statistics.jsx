@@ -1,20 +1,20 @@
-import { Stats } from "./Stats"
-import css from './Statistics.module.css'
+import { Stats } from "../Stats/Stats"
+import { Section, StatList } from "./Statistics.styled";
 import PropTypes from 'prop-types';
-import { StatsTitle } from "./StatsTitle";
+import { StatsTitle } from "../StatsTitle/StatsTitle";
 
 
 
 export const Statistics = ({data}) => {
     return (
-        <section className={css.statistics}>
+        <Section>
             <StatsTitle text="Upload stats"/> 
-            <ul className={css.statList}>
+            <StatList>
                 {data.map(({ id, label, percentage }) =>
                     <Stats key={id} label={label} percentage={percentage} />
                 )}
-            </ul>
-        </section>
+            </StatList>
+        </Section>
     )
 }
 
