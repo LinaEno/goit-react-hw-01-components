@@ -21,9 +21,10 @@ export const Table = styled.table`
         text-align: center;
         
         
+        
     }
 
-    &>tbody>tr:nth-child(2n){
+    &>tbody>tr:nth-of-type(2n){
     background-color: rgb(211, 238, 215);
     }
     
