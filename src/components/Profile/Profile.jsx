@@ -8,11 +8,11 @@ export const Profile = ({ username, tag, location, avatar, followers, views, lik
                 <Image
             src={avatar}
             alt="User avatar"
-    />
-          <UserName>{username}</UserName>
-          <Tag>@{tag}</Tag>
-          <Location>{location}</Location>
-  </ContainerImage>
+        />
+                <UserName>{username}</UserName>
+                <Tag>@{tag}</Tag>
+                <Location>{location}</Location>
+        </ContainerImage>
 
   <StatsList>
     <li>
